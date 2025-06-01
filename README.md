@@ -11,7 +11,7 @@ This project implements an AI-powered autonomous agent system for CRM automation
    - Hugging Face account with API key (free tier for LLaMA 3 8B Instruct) or OpenRouter account with API key (free tier for LLaMA 4 Maverick)
 
 2. **Installation**:
-   `ash
+   `bash
    # Create and activate virtual environment
    python -m venv .venv
    .\.venv\Scripts\activate
@@ -21,8 +21,8 @@ This project implements an AI-powered autonomous agent system for CRM automation
    `
 
 3. **Configuration**:
-   - Copy pi_config.template.json to pi_config.json:
-     `ash
+   - Copy api_config.template.json to api_config.json:
+     `bash
      cp api_config.template.json api_config.json
      `
    - Update pi_config.json or .env with your API keys:
@@ -47,7 +47,8 @@ This project implements an AI-powered autonomous agent system for CRM automation
 - pi_config.template.json: Template for API configuration
 - pi_config.json: User-created API configuration (not tracked by Git)
 - .env: Environment variables (not tracked by Git)
-- equirements.txt: Python dependencies
+- 
+equirements.txt: Python dependencies
 
 ## Usage
 - The system accepts queries like:
@@ -58,7 +59,7 @@ This project implements an AI-powered autonomous agent system for CRM automation
 - Results are printed to the console
 
 ## Notes
-- Do not commit pi_config.json or .env to Git (excluded by .gitignore)
+- Do not commit api_config.json or .env to Git (excluded by .gitignore)
 - HubSpot and MailerSend free tiers are sufficient for basic operations
 - Use Hugging Face for LLaMA 3 8B or OpenRouter for LLaMA 4 Maverick (set the appropriate API key)
 - Error handling is implemented for API failures
