@@ -65,16 +65,30 @@ python crm_agent.py
 
 ## Usage
 
-- The system accepts commands like:  
-  - `"create contact"`  
-  - `"update contact"`  
-  - `"create deal"`  
+This program lets you interact with the HubSpot CRM via natural language queries.
 
-- The Global Orchestrator delegates tasks to:  
-  - HubSpot Agent  
-  - Email Agent  
+### Running the Script
 
-- Task results are printed to the console.
+To run the program and provide your query interactively:
+
+```bash
+python your_script.py
+```
+
+You will be prompted to enter your CRM query, for example:
+
+```
+Enter your CRM query (e.g., 'Create a contact for John Doe with email john.doe@example.com'):
+```
+
+Type your query and press **Enter**.
+
+### Example Queries
+
+- `Create a contact for John Doe with email john.doe@example.com`
+- `Update the company Acme Corp with new phone number 123-456-7890`
+- `Delete the contact with email jane.smith@example.com`
+
 
 ---
 
