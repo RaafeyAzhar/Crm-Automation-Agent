@@ -293,9 +293,10 @@ def create_workflow():
 
     return workflow.compile()
 
-# Main execution
+# # Main execution
 if __name__ == "__main__":
     workflow = create_workflow()
     initial_state = {"query": "Create a contact for John Doe with email john.doe@example.com"}
     result = workflow.invoke(initial_state)
     print(json.dumps(result, indent=2))
+
