@@ -108,5 +108,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 For questions or support, please open an issue on this repository or contact the maintainer directly.
-
-"""
