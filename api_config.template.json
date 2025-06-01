@@ -1,6 +1,11 @@
-﻿{
-    "HUGGINGFACE_API_KEY": "your_huggingface_api_key",
-    "OPENROUTER_API_KEY": "your_openrouter_api_key",
-    "HUBSPOT_API_KEY": "your_hubspot_api_key",
-    "MAILERSEND_API_KEY": "your_mailersend_api_key"
+{
+    "HUGGINGFACE_API_KEY": "hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "OPENROUTER_API_KEY": "sk-or-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "HUBSPOT_API_KEY": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "HUBSPOT_CLIENT_ID": "your_hubspot_client_id",
+    "HUBSPOT_CLIENT_SECRET": "your_hubspot_client_secret",
+    "HUBSPOT_REFRESH_TOKEN": "your_hubspot_refresh_token",
+    "MAILERSEND_API_KEY": "mlsn.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "MAILERSEND_SENDER_EMAIL": "no-reply@yourdomain.com",
+    "MAILERSEND_RECIPIENT_EMAIL": "yourname@gmail.com"
 }

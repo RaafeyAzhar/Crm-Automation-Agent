@@ -1,0 +1,335 @@
+Test ID: TC001
+Description: Create contact with full details
+Query: Create a contact for Luna Lovegood with email luna.lovegood.unique2025@example.com
+Expected Operation: create_contact
+Actual Operation: create_contact
+Success: True
+Timestamp: 2025-06-01T13:08:03.898468
+Result: {
+  "query": "Create a contact for Luna Lovegood with email luna.lovegood.unique2025@example.com",
+  "operation": "create_contact",
+  "payload": {
+    "properties": {
+      "email": "luna.lovegood.unique2025@example.com",
+      "firstname": "Luna",
+      "lastname": "Lovegood"
+    }
+  },
+  "result": {
+    "id": "135570095820",
+    "properties": {
+      "createdate": "2025-06-01T13:08:03.267Z",
+      "email": "luna.lovegood.unique2025@example.com",
+      "firstname": "Luna",
+      "hs_all_contact_vids": "135570095820",
+      "hs_associated_target_accounts": "0",
+      "hs_currently_enrolled_in_prospecting_agent": "false",
+      "hs_email_domain": "example.com",
+      "hs_full_name_or_email": "Luna Lovegood",
+      "hs_is_contact": "true",
+      "hs_is_unworked": "true",
+      "hs_lifecyclestage_lead_date": "2025-06-01T13:08:03.267Z",
+      "hs_marketable_status": "false",
+      "hs_marketable_until_renewal": "false",
+      "hs_membership_has_accessed_private_content": "0",
+      "hs_object_id": "135570095820",
+      "hs_object_source": "INTEGRATION",
+      "hs_object_source_id": "13591218",
+      "hs_object_source_label": "INTEGRATION",
+      "hs_pipeline": "contacts-lifecycle-pipeline",
+      "hs_prospecting_agent_actively_enrolled_count": "0",
+      "hs_registered_member": "0",
+      "hs_sequences_actively_enrolled_count": "0",
+      "lastmodifieddate": "2025-06-01T13:08:03.267Z",
+      "lastname": "Lovegood",
+      "lifecyclestage": "lead",
+      "num_notes": "0"
+    },
+    "createdAt": "2025-06-01T13:08:03.267Z",
+    "updatedAt": "2025-06-01T13:08:03.267Z",
+    "archived": false
+  },
+  "email_status": "sent"
+}
+----------------------------------------
+Test ID: TC002
+Description: Create contact with additional phone property
+Query: Create a contact for Neville Longbottom with email neville.longbottom.unique2025@example.com and phone 555-987-6543
+Expected Operation: create_contact
+Actual Operation: create_contact
+Success: True
+Timestamp: 2025-06-01T13:08:06.589674
+Result: {
+  "query": "Create a contact for Neville Longbottom with email neville.longbottom.unique2025@example.com and phone 555-987-6543",
+  "operation": "create_contact",
+  "payload": {
+    "properties": {
+      "email": "neville.longbottom.unique2025@example.com",
+      "firstname": "Neville",
+      "lastname": "Longbottom",
+      "phone": "555-987-6543"
+    }
+  },
+  "result": {
+    "id": "135713375931",
+    "properties": {
+      "createdate": "2025-06-01T13:08:06.092Z",
+      "email": "neville.longbottom.unique2025@example.com",
+      "firstname": "Neville",
+      "hs_all_contact_vids": "135713375931",
+      "hs_associated_target_accounts": "0",
+      "hs_currently_enrolled_in_prospecting_agent": "false",
+      "hs_email_domain": "example.com",
+      "hs_full_name_or_email": "Neville Longbottom",
+      "hs_is_contact": "true",
+      "hs_is_unworked": "true",
+      "hs_lifecyclestage_lead_date": "2025-06-01T13:08:06.092Z",
+      "hs_marketable_status": "false",
+      "hs_marketable_until_renewal": "false",
+      "hs_membership_has_accessed_private_content": "0",
+      "hs_object_id": "135713375931",
+      "hs_object_source": "INTEGRATION",
+      "hs_object_source_id": "13591218",
+      "hs_object_source_label": "INTEGRATION",
+      "hs_pipeline": "contacts-lifecycle-pipeline",
+      "hs_prospecting_agent_actively_enrolled_count": "0",
+      "hs_registered_member": "0",
+      "hs_searchable_calculated_phone_number": "5559876543",
+      "hs_sequences_actively_enrolled_count": "0",
+      "lastmodifieddate": "2025-06-01T13:08:06.092Z",
+      "lastname": "Longbottom",
+      "lifecyclestage": "lead",
+      "num_notes": "0",
+      "phone": "555-987-6543"
+    },
+    "createdAt": "2025-06-01T13:08:06.092Z",
+    "updatedAt": "2025-06-01T13:08:06.092Z",
+    "archived": false
+  },
+  "email_status": "sent"
+}
+----------------------------------------
+Test ID: TC003
+Description: Update existing contact's firstname
+Query: Update contact ID 135708713670 with firstname Hermione
+Expected Operation: update_contact
+Actual Operation: update_contact
+Success: True
+Timestamp: 2025-06-01T13:08:09.089720
+Result: {
+  "query": "Update contact ID 135708713670 with firstname Hermione",
+  "operation": "update_contact",
+  "payload": {
+    "contact_id": "135708713670",
+    "properties": {
+      "firstname": "Hermione"
+    }
+  },
+  "result": {
+    "id": "135708713670",
+    "properties": {
+      "createdate": "2025-06-01T12:50:40.794Z",
+      "email": "updated.email.unique@example.com",
+      "firstname": "Hermione",
+      "hs_full_name_or_email": "Hermione Doe",
+      "hs_is_contact": "true",
+      "hs_is_unworked": "true",
+      "hs_object_id": "135708713670",
+      "hs_object_source": "INTEGRATION",
+      "hs_object_source_id": "13591218",
+      "hs_object_source_label": "INTEGRATION",
+      "hs_pipeline": "contacts-lifecycle-pipeline",
+      "lastmodifieddate": "2025-06-01T13:08:08.736Z",
+      "lastname": "Doe",
+      "lifecyclestage": "lead"
+    },
+    "createdAt": "2025-06-01T12:50:40.794Z",
+    "updatedAt": "2025-06-01T13:08:08.736Z",
+    "archived": false
+  },
+  "email_status": "sent"
+}
+----------------------------------------
+Test ID: TC004
+Description: Create deal with name and amount
+Query: Create a deal named Magical Broomstick Sale for $7500
+Expected Operation: create_deal
+Actual Operation: create_deal
+Success: True
+Timestamp: 2025-06-01T13:08:11.394015
+Result: {
+  "query": "Create a deal named Magical Broomstick Sale for $7500",
+  "operation": "create_deal",
+  "payload": {
+    "properties": {
+      "dealname": "Magical Broomstick Sale",
+      "amount": "7500"
+    }
+  },
+  "result": {
+    "id": "89210091239",
+    "properties": {
+      "amount": "7500",
+      "amount_in_home_currency": "7500",
+      "createdate": "2025-06-01T13:08:10.997Z",
+      "days_to_close": "0",
+      "deal_currency_code": "USD",
+      "dealname": "Magical Broomstick Sale",
+      "hs_closed_amount": "0",
+      "hs_closed_amount_in_home_currency": "0",
+      "hs_closed_won_count": "0",
+      "hs_createdate": "2025-06-01T13:08:10.997Z",
+      "hs_days_to_close_raw": "0",
+      "hs_deal_stage_probability_shadow": "0",
+      "hs_forecast_amount": "7500",
+      "hs_is_closed_lost": "false",
+      "hs_is_closed_won": "false",
+      "hs_is_deal_split": "false",
+      "hs_lastmodifieddate": "2025-06-01T13:08:10.997Z",
+      "hs_num_associated_active_deal_registrations": "0",
+      "hs_num_associated_deal_registrations": "0",
+      "hs_num_associated_deal_splits": "0",
+      "hs_num_of_associated_line_items": "0",
+      "hs_num_target_accounts": "0",
+      "hs_object_id": "89210091239",
+      "hs_object_source": "INTEGRATION",
+      "hs_object_source_id": "13591218",
+      "hs_object_source_label": "INTEGRATION",
+      "hs_projected_amount": "0",
+      "hs_projected_amount_in_home_currency": "0",
+      "num_associated_contacts": "0",
+      "num_notes": "0"
+    },
+    "createdAt": "2025-06-01T13:08:10.997Z",
+    "updatedAt": "2025-06-01T13:08:10.997Z",
+    "archived": false
+  },
+  "email_status": "sent"
+}
+----------------------------------------
+Test ID: TC005
+Description: Create contact with unique email to avoid duplicates
+Query: Create a contact for Draco Malfoy with email draco.malfoy.unique2025@example.com
+Expected Operation: create_contact
+Actual Operation: create_contact
+Success: True
+Timestamp: 2025-06-01T13:08:14.011762
+Result: {
+  "query": "Create a contact for Draco Malfoy with email draco.malfoy.unique2025@example.com",
+  "operation": "create_contact",
+  "payload": {
+    "properties": {
+      "email": "draco.malfoy.unique2025@example.com",
+      "firstname": "Draco",
+      "lastname": "Malfoy"
+    }
+  },
+  "result": {
+    "id": "135723994832",
+    "properties": {
+      "createdate": "2025-06-01T13:08:13.780Z",
+      "email": "draco.malfoy.unique2025@example.com",
+      "firstname": "Draco",
+      "hs_all_contact_vids": "135723994832",
+      "hs_associated_target_accounts": "0",
+      "hs_currently_enrolled_in_prospecting_agent": "false",
+      "hs_email_domain": "example.com",
+      "hs_full_name_or_email": "Draco Malfoy",
+      "hs_is_contact": "true",
+      "hs_is_unworked": "true",
+      "hs_lifecyclestage_lead_date": "2025-06-01T13:08:13.780Z",
+      "hs_marketable_status": "false",
+      "hs_marketable_until_renewal": "false",
+      "hs_membership_has_accessed_private_content": "0",
+      "hs_object_id": "135723994832",
+      "hs_object_source": "INTEGRATION",
+      "hs_object_source_id": "13591218",
+      "hs_object_source_label": "INTEGRATION",
+      "hs_pipeline": "contacts-lifecycle-pipeline",
+      "hs_prospecting_agent_actively_enrolled_count": "0",
+      "hs_registered_member": "0",
+      "hs_sequences_actively_enrolled_count": "0",
+      "lastmodifieddate": "2025-06-01T13:08:13.780Z",
+      "lastname": "Malfoy",
+      "lifecyclestage": "lead",
+      "num_notes": "0"
+    },
+    "createdAt": "2025-06-01T13:08:13.780Z",
+    "updatedAt": "2025-06-01T13:08:13.780Z",
+    "archived": false
+  },
+  "email_status": "sent"
+}
+----------------------------------------
+Test ID: TC006
+Description: Update existing contact email
+Query: Update contact ID 135708713670 with email updated.email.unique2025@example.com
+Expected Operation: update_contact
+Actual Operation: update_contact
+Success: False
+Timestamp: 2025-06-01T13:08:15.765491
+Result: {
+  "query": "Update contact ID 135708713670 with email updated.email.unique2025@example.com",
+  "operation": "update_contact",
+  "payload": {
+    "contact_id": "ID135708713670",
+    "properties": {
+      "email": "updated.email.unique2025@example.com"
+    }
+  },
+  "result": {
+    "error": "404 Client Error: Not Found for url: https://api.hubapi.com/crm/v3/objects/contacts/ID135708713670"
+  },
+  "email_status": "sent"
+}
+----------------------------------------
+Test ID: TC007
+Description: Create contact with minimal details and unique email
+Query: Create a contact with email ginny.weasley.unique2025@example.com
+Expected Operation: create_contact
+Actual Operation: create_contact
+Success: True
+Timestamp: 2025-06-01T13:08:18.107358
+Result: {
+  "query": "Create a contact with email ginny.weasley.unique2025@example.com",
+  "operation": "create_contact",
+  "payload": {
+    "properties": {
+      "email": "ginny.weasley.unique2025@example.com"
+    }
+  },
+  "result": {
+    "id": "135570095826",
+    "properties": {
+      "createdate": "2025-06-01T13:08:17.906Z",
+      "email": "ginny.weasley.unique2025@example.com",
+      "hs_all_contact_vids": "135570095826",
+      "hs_associated_target_accounts": "0",
+      "hs_currently_enrolled_in_prospecting_agent": "false",
+      "hs_email_domain": "example.com",
+      "hs_full_name_or_email": "ginny.weasley.unique2025@example.com",
+      "hs_is_contact": "true",
+      "hs_is_unworked": "true",
+      "hs_lifecyclestage_lead_date": "2025-06-01T13:08:17.906Z",
+      "hs_marketable_status": "false",
+      "hs_marketable_until_renewal": "false",
+      "hs_membership_has_accessed_private_content": "0",
+      "hs_object_id": "135570095826",
+      "hs_object_source": "INTEGRATION",
+      "hs_object_source_id": "13591218",
+      "hs_object_source_label": "INTEGRATION",
+      "hs_pipeline": "contacts-lifecycle-pipeline",
+      "hs_prospecting_agent_actively_enrolled_count": "0",
+      "hs_registered_member": "0",
+      "hs_sequences_actively_enrolled_count": "0",
+      "lastmodifieddate": "2025-06-01T13:08:17.906Z",
+      "lifecyclestage": "lead",
+      "num_notes": "0"
+    },
+    "createdAt": "2025-06-01T13:08:17.906Z",
+    "updatedAt": "2025-06-01T13:08:17.906Z",
+    "archived": false
+  },
+  "email_status": "sent"
+}
+----------------------------------------
